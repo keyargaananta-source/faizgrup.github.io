@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAIZ UMAR GROUP - Solusi Konstruksi Untuk Masa Depan</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            DEFAULT: '#0B2545',
+                            dark: '#06162B',
+                            light: '#133663',
+                            surface: '#0F2F57'
+                        },
+                        brandBlue: {
+                            50: '#E6F0FA',
+                            100: '#CCE2F5',
+                            500: '#0066B2',
+                            600: '#005291',
+                            700: '#003E70'
+                        },
+                        accentCyan: '#00C2FF'
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        heading: ['Montserrat', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(6, 22, 43, 0.95) 0%, rgba(11, 37, 69, 0.88) 100%),
+                        url('https://images.unsplash.com/photo-1541888946425-d0fbb186a5b3?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+        }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(12px);
+        }
+        .glass-dark {
+            background: rgba(15, 47, 87, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+        }
+        /* Custom range slider styling */
+        input[type=range] {
+            accent-color: #0066B2;
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-800 bg-slate-50 antialiased selection:bg-brandBlue-500 selection:text-white">
+
+    <!-- Top Bar -->
+    <div class="bg-navy-dark text-slate-300 text-xs py-2.5 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex flex-wrap justify-center sm:justify-start items-center gap-4 sm:gap-6 text-slate-300">
+                <span class="flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-brandBlue-500"></i> Jl. Jend. Sudirman No. 88, Jakarta Selatan</span>
+                <span class="flex items-center gap-1.5"><i class="fa-solid fa-envelope text-brandBlue-500"></i> info@faizumargroup.com</span>
+                <span class="hidden lg:flex items-center gap-1.5"><i class="fa-solid fa-clock text-brandBlue-500"></i> Sen - Sab: 08:00 - 17:00</span>
+            </div>
+            <div class="flex items-center gap-4 text-sm">
+                <a href="#" class="hover:text-brandBlue-500 transition-colors" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="hover:text-brandBlue-500 transition-colors" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" class="hover:text-brandBlue-500 transition-colors" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://wa.me/6281234567890" target="_blank" class="hover:text-emerald-400 transition-colors" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 glass-nav border-b border-slate-200/80 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- SVG Brand Logo -->
+                <a href="#beranda" class="flex items-center gap-3.5 group">
+                    <div class="w-12 h-12 flex-shrink-0 transition-transform group-hover:scale-105">
+                        <svg viewBox="0 0 300 280" class="w-full h-full drop-shadow-sm">
+                            <!-- Construction Crane Top -->
+                            <path d="M150 80 L260 80 L240 65 L150 65 Z" fill="#0B2545"/>
+                            <path d="M185 65 L185 30 L260 30 L220 65" fill="none" stroke="#0B2545" stroke-width="4"/>
+                            <line x1="185" y1="30" x2="245" y2="80" stroke="#0B2545" stroke-width="3"/>
+                            <line x1="205" y1="30" x2="260" y2="80" stroke="#0B2545" stroke-width="3"/>
+                            <rect x="175" y="22" width="18" height="12" fill="#0B2545"/>
+                            <line x1="192" y1="30" x2="192" y2="85" stroke="#0B2545" stroke-width="7"/>
+                            <path d="M245 80 L245 115 L240 120" fill="none" stroke="#0B2545" stroke-width="3"/>
+                            
+                            <!-- Letter F & J / Building Blocks -->
+                            <path d="M50 60 L150 60 L150 160 L80 160 L80 95 L50 95 Z" fill="#0B2545"/>
+                            <path d="M140 110 L220 150 L220 205 L140 205 Z" fill="#0B2545"/>
+                            
+                            <!-- Architectural Vertical Bars (Gray) -->
+                            <rect x="125" y="95" width="11" height="42" fill="#64748B"/>
+                            <rect x="140" y="75" width="12" height="62" fill="#475569"/>
+                            <rect x="157" y="62" width="12" height="75" fill="#334155"/>
+                            <rect x="174" y="75" width="11" height="62" fill="#64748B"/>
+
+                            <!-- Front Blue Gable Roof -->
+                            <path d="M80 168 L150 118 L220 168 L200 182 L150 146 L100 182 Z" fill="#0066B2"/>
+                            
+                            <!-- House Window Cutouts -->
+                            <rect x="135" y="148" width="12" height="12" fill="#0B2545"/>
+                            <rect x="152" y="148" width="12" height="12" fill="#0B2545"/>
+                            <rect x="135" y="165" width="12" height="12" fill="#0B2545"/>
+                            <rect x="152" y="165" width="12" height="12" fill="#0B2545"/>
+                        </svg>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-heading font-black text-xl sm:text-2xl text-navy tracking-tight leading-none">
+                            FAIZ UMAR
+                        </span>
+                        <div class="flex items-center gap-1.5 mt-0.5">
+                            <span class="h-[2px] w-3 bg-brandBlue-500"></span>
+                            <span class="font-heading font-bold text-[11px] tracking-[0.25em] text-navy">GROUP</span>
+                            <span class="h-[2px] w-3 bg-brandBlue-500"></span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav Links -->
+                <nav class="hidden lg:flex items-center space-x-7">
+                    <a href="#beranda" class="font-semibold text-slate-700 hover:text-brandBlue-500 text-sm transition-colors">Beranda</a>
+                    <a href="#tentang" class="font-semibold text-slate-700 hover:text-brandBlue-500 text-sm transition-colors">Tentang Kami</a>
+                    <a href="#layanan" class="font-semibold text-slate-700 hover:text-brandBlue-500 text-sm transition-colors">Layanan</a>
+                    <a href="#branding" class="font-semibold text-slate-700 hover:text-brandBlue-500 text-sm transition-colors">Branding & Mockup</a>
+                    <a href="#portfolio" class="font-semibold text-slate-700 hover:text-brandBlue-500 text-sm transition-colors">Portofolio</a>
+                    <a href="#kalkulator" class="font-semibold text-slate-700 hover:text-brandBlue-500 text-sm transition-colors">Kalkulator Estimasi</a>
+                </nav>
+
+                <!-- Desktop CTA Button -->
+                <div class="hidden lg:flex items-center">
+                    <a href="#kontak" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-navy hover:bg-brandBlue-600 text-white font-semibold text-sm transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                        <i class="fa-solid fa-headset text-brandBlue-500"></i>
+                        <span>Hubungi Kami</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-toggle" type="button" class="lg:hidden p-2 rounded-lg text-slate-700 hover:bg-slate-100 focus:outline-none" aria-label="Toggle Navigation">
+                    <i id="menu-icon" class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3">
+            <a href="#beranda" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-50 hover:text-brandBlue-500">Beranda</a>
+            <a href="#tentang" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-50 hover:text-brandBlue-500">Tentang Kami</a>
+            <a href="#layanan" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-50 hover:text-brandBlue-500">Layanan</a>
+            <a href="#branding" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-50 hover:text-brandBlue-500">Branding & Mockup</a>
+            <a href="#portfolio" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-50 hover:text-brandBlue-500">Portofolio</a>
+            <a href="#kalkulator" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-50 hover:text-brandBlue-500">Kalkulator Estimasi</a>
+            <a href="#kontak" class="mobile-nav-link block w-full text-center px-4 py-3 rounded-xl bg-navy text-white font-semibold shadow">Hubungi Kami</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="hero-gradient min-h-[92vh] flex items-center relative text-white py-20 lg:py-28 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brandBlue-500/20 border border-brandBlue-500/40 text-cyan-300 text-xs sm:text-sm font-semibold tracking-wide uppercase">
+                        <i class="fa-solid fa-shield-halved text-brandBlue-500"></i> Kontraktor Terpercaya & Bersertifikasi
+                    </div>
+                    
+                    <h1 class="font-heading font-black text-3xl sm:text-5xl lg:text-6xl text-white leading-tight">
+                        Membangun Masa Depan <br class="hidden sm:inline">
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-sky-200 to-blue-300">
+                            Lebih Kokoh & Terpercaya
+                        </span>
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-slate-300 font-normal max-w-2xl leading-relaxed mx-auto lg:mx-0">
+                        <strong class="text-white">SOLUSI KONSTRUKSI UNTUK MASA DEPAN</strong> — Layanan konstruksi umum, renovasi, pembangunan fasilitas komersial/residensial, dan perencanaan arsitektur profesional presisi tinggi.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 pt-2">
+                        <a href="https://wa.me/6281234567890?text=Halo%20FAIZ%20UMAR%20GROUP,%20saya%20ingin%20konsultasi%20mengenai%20proyek%20konstruksi." target="_blank" class="inline-flex items-center justify-center px-7 py-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-base transition-all shadow-lg shadow-emerald-600/30 hover:scale-105 gap-3">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            <span>Konsultasi Gratis</span>
+                        </a>
+                        <a href="#portfolio" class="inline-flex items-center justify-center px-7 py-4 rounded-xl bg-navy-light hover:bg-brandBlue-600 border border-slate-600 hover:border-brandBlue-500 text-white font-bold text-base transition-all gap-2">
+                            <span>Lihat Portofolio</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="pt-8 border-t border-slate-700/80 grid grid-cols-2 sm:grid-cols-4 gap-4">
+                        <div class="text-center lg:text-left">
+                            <div class="font-heading font-extrabold text-2xl sm:text-3xl text-cyan-400">15+</div>
+                            <div class="text-xs text-slate-400 font-medium">Tahun Pengalaman</div>
+                        </div>
+                        <div class="text-center lg:text-left">
+                            <div class="font-heading font-extrabold text-2xl sm:text-3xl text-cyan-400">250+</div>
+                            <div class="text-xs text-slate-400 font-medium">Proyek Selesai</div>
+                        </div>
+                        <div class="text-center lg:text-left">
+                            <div class="font-heading font-extrabold text-2xl sm:text-3xl text-cyan-400">100%</div>
+                            <div class="text-xs text-slate-400 font-medium">Kepuasan Klien</div>
+                        </div>
+                        <div class="text-center lg:text-left">
+                            <div class="font-heading font-extrabold text-2xl sm:text-3xl text-cyan-400">ISO</div>
+                            <div class="text-xs text-slate-400 font-medium">Garansi Mutu K3</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5 hidden lg:block">
+                    <div class="relative">
+                        <div class="absolute -inset-1.5 bg-gradient-to-r from-brandBlue-500 to-cyan-400 rounded-3xl blur-md opacity-40"></div>
+                        <div class="relative glass-dark rounded-2xl p-8 text-white space-y-6">
+                            <div class="flex items-center justify-between border-b border-slate-700/80 pb-4">
+                                <div>
+                                    <h3 class="font-heading font-bold text-lg text-white">Standar Operasional FUG</h3>
+                                    <p class="text-xs text-slate-300">Komitmen Kualitas Konstruksi Modern</p>
+                                </div>
+                                <span class="bg-brandBlue-500 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase">Verified</span>
+                            </div>
+
+                            <div class="space-y-4">
+                                <div class="flex items-start gap-4 p-3.5 rounded-xl bg-navy-dark/60 border border-slate-700/50">
+                                    <div class="p-3 rounded-lg bg-brandBlue-500/20 text-cyan-400 text-xl">
+                                        <i class="fa-solid fa-drafting-compass"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-sm text-white">Desain & Perhitungan Presisi</h4>
+                                        <p class="text-xs text-slate-300 mt-0.5">Analisis struktur CAD/BIM dan RAB terbuka tanpa biaya tersembunyi.</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start gap-4 p-3.5 rounded-xl bg-navy-dark/60 border border-slate-700/50">
+                                    <div class="p-3 rounded-lg bg-emerald-500/20 text-emerald-400 text-xl">
+                                        <i class="fa-solid fa-helmet-safety"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-sm text-white">Pengawasan Lapangan Ketat</h4>
+                                        <p class="text-xs text-slate-300 mt-0.5">Insinyur berpengalaman dan pemantauan keselamatan K3 berkala.</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start gap-4 p-3.5 rounded-xl bg-navy-dark/60 border border-slate-700/50">
+                                    <div class="p-3 rounded-lg bg-cyan-500/20 text-cyan-300 text-xl">
+                                        <i class="fa-solid fa-square-check"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-sm text-white">Bahan & Material Premium</h4>
+                                        <p class="text-xs text-slate-300 mt-0.5">Hanya menggunakan semen, baja SNI, dan spesifikasi bersertifikat.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="#kalkulator" class="block w-full text-center py-3 rounded-xl bg-brandBlue-500 hover:bg-brandBlue-600 text-white font-bold text-xs uppercase tracking-wider transition-colors">
+                                Hitung Estimasi Biaya Proyek &rarr;
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang Kami Section -->
+    <section id="tentang" class="py-20 lg:py-28 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-6 relative">
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1000&q=80" alt="Faiz Umar Group Team Construction" class="w-full h-[460px] object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-transparent to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-6 glass-dark rounded-xl text-white border border-white/20">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-xl bg-brandBlue-500 flex items-center justify-center text-white font-bold text-2xl">
+                                    <i class="fa-solid fa-award"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-base">Integritas & Kualitas Utama</h4>
+                                    <p class="text-xs text-slate-300">Memberikan standar pengerjaan konstruksi tanpa kompromi.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-block px-3.5 py-1 rounded-full bg-brandBlue-50 text-brandBlue-600 text-xs font-bold uppercase tracking-wider">
+                        Tentang FAIZ UMAR GROUP
+                    </div>
+                    <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-navy leading-tight">
+                        Mitra Strategis Pembangunan Infrastruktur & Properti Anda
+                    </h2>
+                    <p class="text-slate-600 leading-relaxed">
+                        <strong class="text-navy">FAIZ UMAR GROUP</strong> didirikan dengan semangat memberikan solusi lengkap di bidang konstruksi sipil, arsitektur, dan renovasi. Kami menggabungkan ketelitian teknis, manajemen rantai pasok material yang kuat, serta teknologi konstruksi modern untuk mewujudkan proyek yang aman, tepat waktu, dan efisien.
+                    </p>
+                    <p class="text-slate-600 leading-relaxed">
+                        Tagline kami <strong class="text-brandBlue-600">"Solusi Konstruksi Untuk Masa Depan"</strong> merupakan landasan kami dalam melahirkan bangunan berdaya tahan tinggi, estetis, dan bernilai investasi tinggi.
+                    </p>
+
+                    <div class="grid sm:grid-cols-2 gap-4 pt-2">
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80">
+                            <div class="text-brandBlue-500 text-xl font-bold mb-1"><i class="fa-solid fa-shield-cat mr-2"></i>Integritas</div>
+                            <p class="text-xs text-slate-600">Transparansi penuh dalam RAB, durasi pengerjaan, dan spesifikasi bahan.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80">
+                            <div class="text-brandBlue-500 text-xl font-bold mb-1"><i class="fa-solid fa-stopwatch mr-2"></i>Ketepatan Waktu</div>
+                            <p class="text-xs text-slate-600">Manajemen timeline proyek yang disiplin dan sistematis.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80">
+                            <div class="text-brandBlue-500 text-xl font-bold mb-1"><i class="fa-solid fa-gem mr-2"></i>Kualitas Unggul</div>
+                            <p class="text-xs text-slate-600">Standar pengerjaan presisi tinggi sesuai standar SNI & ISO.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80">
+                            <div class="text-brandBlue-500 text-xl font-bold mb-1"><i class="fa-solid fa-lightbulb mr-2"></i>Inovasi Masa Depan</div>
+                            <p class="text-xs text-slate-600">Penerapan metode konstruksi ramah lingkungan & arsitektur modern.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Layanan Section -->
+    <section id="layanan" class="py-20 lg:py-28 bg-slate-100/70">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="px-3.5 py-1 rounded-full bg-brandBlue-100 text-brandBlue-600 text-xs font-bold uppercase tracking-wider">Layanan Utama</span>
+                <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-navy mt-3">Solusi Konstruksi Terintegrasi</h2>
+                <p class="text-slate-600 mt-3 text-sm sm:text-base">Dukungan penuh dari perencanaan awal, perizinan, struktur, hingga finishing tingkat lanjut.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm border border-slate-200 hover:shadow-xl transition-all duration-300 group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-brandBlue-50 text-brandBlue-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-navy group-hover:text-cyan-400 transition-colors">
+                        <i class="fa-solid fa-city"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-navy mb-3">Konstruksi Umum</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Pembangunan gedung perkantoran, kompleks perumahan, pusat perbelanjaan, gudang industri, dan infrastruktur publik.
+                    </p>
+                    <ul class="text-xs text-slate-500 space-y-2">
+                        <li><i class="fa-solid fa-check text-brandBlue-500 mr-2"></i> Gedung Bertingkat</li>
+                        <li><i class="fa-solid fa-check text-brandBlue-500 mr-2"></i> Perumahan & Cluster</li>
+                        <li><i class="fa-solid fa-check text-brandBlue-500 mr-2"></i> Fasilitas Komersial</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm border border-slate-200 hover:shadow-xl transition-all duration-300 group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-brandBlue-50 text-brandBlue-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-navy group-hover:text-cyan-400 transition-colors">
+                        <i class="fa-solid fa-cubes-stacked"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-navy mb-3">Bangunan & Struktur</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Pekerjaan struktur beton bertulang, ereksi rangka baja span lebar, pondasi dalam (bored pile), dan teknik sipil.
+                    </p>
+                    <ul class="text-xs text-slate-500 space-y-2">
+                        <li><i class="fa-solid fa-check text-brandBlue-500 mr-2"></i> Rangka Baja WF/H-Beam</li>
+                        <li><i class="fa-solid fa-check text-brandBlue-500 mr-2"></i> Struktur Beton SNI</li>
+                        <li><i class="fa-solid fa-check text-brandBlue-500 mr-2"></i> Pekerjaan Tanah & Sipil</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm border border-slate-200 hover:shadow-xl transition-all duration-300 group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-brandBlue-50 text-brandBlue-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-navy group-hover:text-cyan-400 transition-colors">
+                        <i class="fa-solid fa-wrench"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-navy mb-3">Renovasi & Restorasi</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Pembaruan tampilan fasad gedung, penambahan tingkat struktur, perbaikan interior, serta peremajaan fasilitas.
+                    </p>
+                    <ul class="text-xs text-slate-500 space-y-2">
+                        <li><i class="fa-solid fa-check text-brandBlue-500 mr-2"></i> Redesain Fasad Modern</li>
+                        <li><i class="fa-solid fa-check text-brandBlue-500 mr-2"></i> Top-up Lantai Bangunan</li>
+                        <li><i class="fa-solid fa-check text-brandBlue-500 mr-2"></i> Perbaikan MEP & Utilitas</li>
+                    </ul>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm border border-slate-200 hover:shadow-xl transition-all duration-300 group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-brandBlue-50 text-brandBlue-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-navy group-hover:text-cyan-400 transition-colors">
+                        <i class="fa-solid fa-compass-drafting"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-navy mb-3">Perencanaan & Arsitektur</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Jasa arsitektur profesional, gambar 3D Photorealistic, penyusunan DED (Detail Engineering Design), dan masterplan.
+                    </p>
+                    <ul class="text-xs text-slate-500 space-y-2">
+                        <li><i class="fa-solid fa-check text-brandBlue-500 mr-2"></i> Rendering 3D Animation</li>
+                        <li><i class="fa-solid fa-check text-brandBlue-500 mr-2"></i> Gambar Kerja & IMB/PBG</li>
+                        <li><i class="fa-solid fa-check text-brandBlue-500 mr-2"></i> Perhitungan Struktur & RAB</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Branding Section -->
+    <section id="branding" class="py-20 lg:py-28 bg-navy text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="px-3.5 py-1 rounded-full bg-brandBlue-500/20 text-cyan-300 border border-brandBlue-500/40 text-xs font-bold uppercase tracking-wider">
+                    Visual Brand Showcase
+                </span>
+                <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-white mt-3">
+                    Identitas Korporat & Mockup Aplikasi Brand
+                </h2>
+                <p class="text-slate-300 mt-3 text-sm sm:text-base">
+                    Penerapan konsisten logo FAIZ UMAR GROUP pada seluruh atribut fisik proyek, perlengkapan K3, kendaraan operasional, dan perlengkapan bisnis.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-6">
+                <!-- Mockups 1-8 -->
+                <div class="bg-navy-light/60 border border-slate-700/80 rounded-2xl p-5 text-center group hover:border-brandBlue-500 transition-all">
+                    <div class="w-full h-40 bg-slate-800/80 rounded-xl mb-4 flex items-center justify-center relative overflow-hidden">
+                        <i class="fa-solid fa-hardhat text-7xl text-slate-200 group-hover:scale-110 group-hover:text-cyan-400 transition-all"></i>
+                        <span class="absolute bottom-2 bg-navy/90 text-[10px] text-white font-mono px-2 py-0.5 rounded">FUG - Safety Helmet K3</span>
+                    </div>
+                    <h4 class="font-bold text-white text-base">Helm Safety K3</h4>
+                    <p class="text-xs text-slate-400 mt-1">Standar Alat Pelindung Diri Lapangan</p>
+                </div>
+
+                <div class="bg-navy-light/60 border border-slate-700/80 rounded-2xl p-5 text-center group hover:border-brandBlue-500 transition-all">
+                    <div class="w-full h-40 bg-slate-800/80 rounded-xl mb-4 flex items-center justify-center relative overflow-hidden">
+                        <i class="fa-solid fa-shirt text-7xl text-brandBlue-500 group-hover:scale-110 transition-all"></i>
+                        <span class="absolute bottom-2 bg-navy/90 text-[10px] text-white font-mono px-2 py-0.5 rounded">Navy Corporate Polo</span>
+                    </div>
+                    <h4 class="font-bold text-white text-base">Seragam & Polo Shirt</h4>
+                    <p class="text-xs text-slate-400 mt-1">Identitas Insinyur & Staf Proyek</p>
+                </div>
+
+                <div class="bg-navy-light/60 border border-slate-700/80 rounded-2xl p-5 text-center group hover:border-brandBlue-500 transition-all">
+                    <div class="w-full h-40 bg-slate-800/80 rounded-xl mb-4 flex items-center justify-center relative overflow-hidden">
+                        <i class="fa-solid fa-rectangle-ad text-7xl text-cyan-400 group-hover:scale-110 transition-all"></i>
+                        <span class="absolute bottom-2 bg-navy/90 text-[10px] text-white font-mono px-2 py-0.5 rounded">Site Barrier Banner</span>
+                    </div>
+                    <h4 class="font-bold text-white text-base">Billboard & Banner Proyek</h4>
+                    <p class="text-xs text-slate-400 mt-1">Branding Area Lapangan Proyek</p>
+                </div>
+
+                <div class="bg-navy-light/60 border border-slate-700/80 rounded-2xl p-5 text-center group hover:border-brandBlue-500 transition-all">
+                    <div class="w-full h-40 bg-slate-800/80 rounded-xl mb-4 flex items-center justify-center relative overflow-hidden">
+                        <i class="fa-solid fa-truck-pickup text-7xl text-slate-300 group-hover:scale-110 group-hover:text-cyan-300 transition-all"></i>
+                        <span class="absolute bottom-2 bg-navy/90 text-[10px] text-white font-mono px-2 py-0.5 rounded">Fleet Livery Wrap</span>
+                    </div>
+                    <h4 class="font-bold text-white text-base">Branding Kendaraan Ops</h4>
+                    <p class="text-xs text-slate-400 mt-1">Armada Pickup & Mobil Lapangan</p>
+                </div>
+
+                <div class="bg-navy-light/60 border border-slate-700/80 rounded-2xl p-5 text-center group hover:border-brandBlue-500 transition-all">
+                    <div class="w-full h-40 bg-slate-800/80 rounded-xl mb-4 flex items-center justify-center relative overflow-hidden">
+                        <i class="fa-solid fa-building-flag text-7xl text-cyan-300 group-hover:scale-110 transition-all"></i>
+                        <span class="absolute bottom-2 bg-navy/90 text-[10px] text-white font-mono px-2 py-0.5 rounded">3D Metal Signage</span>
+                    </div>
+                    <h4 class="font-bold text-white text-base">Signage & Totem Gedung</h4>
+                    <p class="text-xs text-slate-400 mt-1">Plang Logo Metal Stainless/LED</p>
+                </div>
+
+                <div class="bg-navy-light/60 border border-slate-700/80 rounded-2xl p-5 text-center group hover:border-brandBlue-500 transition-all">
+                    <div class="w-full h-40 bg-slate-800/80 rounded-xl mb-4 flex items-center justify-center relative overflow-hidden">
+                        <i class="fa-solid fa-id-card text-7xl text-slate-200 group-hover:scale-110 group-hover:text-cyan-400 transition-all"></i>
+                        <span class="absolute bottom-2 bg-navy/90 text-[10px] text-white font-mono px-2 py-0.5 rounded">Stationery Set</span>
+                    </div>
+                    <h4 class="font-bold text-white text-base">Kartu Nama & Dokumen</h4>
+                    <p class="text-xs text-slate-400 mt-1">Perlengkapan Kantor Resmi</p>
+                </div>
+
+                <div class="bg-navy-light/60 border border-slate-700/80 rounded-2xl p-5 text-center group hover:border-brandBlue-500 transition-all">
+                    <div class="w-full h-40 bg-slate-800/80 rounded-xl mb-4 flex items-center justify-center relative overflow-hidden">
+                        <i class="fa-solid fa-mug-hot text-7xl text-brandBlue-400 group-hover:scale-110 transition-all"></i>
+                        <span class="absolute bottom-2 bg-navy/90 text-[10px] text-white font-mono px-2 py-0.5 rounded">Client Souvenir</span>
+                    </div>
+                    <h4 class="font-bold text-white text-base">Mug & Cinderamata</h4>
+                    <p class="text-xs text-slate-400 mt-1">Merchandise Klien & Mitra</p>
+                </div>
+
+                <div class="bg-navy-light/60 border border-slate-700/80 rounded-2xl p-5 text-center group hover:border-brandBlue-500 transition-all">
+                    <div class="w-full h-40 bg-slate-800/80 rounded-xl mb-4 flex items-center justify-center relative overflow-hidden">
+                        <i class="fa-solid fa-vest text-7xl text-amber-400 group-hover:scale-110 transition-all"></i>
+                        <span class="absolute bottom-2 bg-navy/90 text-[10px] text-white font-mono px-2 py-0.5 rounded">High-Vis Safety Vest</span>
+                    </div>
+                    <h4 class="font-bold text-white text-base">Rompi Safety Lapangan</h4>
+                    <p class="text-xs text-slate-400 mt-1">Atribut Reflektif Pengawas Proyek</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 lg:py-28 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <span class="px-3.5 py-1 rounded-full bg-brandBlue-100 text-brandBlue-600 text-xs font-bold uppercase tracking-wider">Hasil Kerja</span>
+                    <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-navy mt-3">Portofolio Proyek Terpilih</h2>
+                </div>
+                
+                <!-- Filter Tabs -->
+                <div class="mt-6 md:mt-0 flex flex-wrap gap-2" id="portfolio-tabs">
+                    <button data-filter="all" class="port-tab active px-4 py-2 rounded-xl text-xs font-bold bg-navy text-white shadow transition-all">Semua Proyek</button>
+                    <button data-filter="komersial" class="port-tab px-4 py-2 rounded-xl text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-all">Komersial</button>
+                    <button data-filter="residensial" class="port-tab px-4 py-2 rounded-xl text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-all">Residensial</button>
+                    <button data-filter="renovasi" class="port-tab px-4 py-2 rounded-xl text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-all">Renovasi</button>
+                    <button data-filter="industri" class="port-tab px-4 py-2 rounded-xl text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-all">Industri</button>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="portfolio-grid">
+                <!-- Project 1 -->
+                <div class="port-item komersial bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 group hover:shadow-xl transition-all cursor-pointer" onclick="openProjectModal('Gedung Perkantoran FUG Tower', 'Jakarta Selatan', 'Komersial', 'Konstruksi 12 lantai struktur beton SNI dengan desain modern curtain wall dan fasilitas basement 2 lantai.', 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=80')">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" alt="Gedung Komersial" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                            <span class="text-xs bg-brandBlue-500 text-white px-3 py-1 rounded-full font-semibold">Klik Detail &rarr;</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-[10px] font-bold text-brandBlue-600 uppercase tracking-widest">Komersial</span>
+                        <h3 class="font-heading font-bold text-xl text-navy mt-1">Gedung Perkantoran FUG Tower</h3>
+                        <p class="text-slate-500 text-xs mt-2"><i class="fa-solid fa-location-dot mr-1"></i> Jakarta Selatan &bull; 12 Lantai</p>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="port-item residensial bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 group hover:shadow-xl transition-all cursor-pointer" onclick="openProjectModal('Villa Tropical Luxury', 'BSD City', 'Residensial', 'Luas bangunan 450 m² dengan konsep tropical open space, kolam renang infinity, dan integrasi smart home system.', 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1000&q=80')">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80" alt="Residensial Villa" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                            <span class="text-xs bg-brandBlue-500 text-white px-3 py-1 rounded-full font-semibold">Klik Detail &rarr;</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-[10px] font-bold text-brandBlue-600 uppercase tracking-widest">Residensial</span>
+                        <h3 class="font-heading font-bold text-xl text-navy mt-1">Villa Tropical Luxury</h3>
+                        <p class="text-slate-500 text-xs mt-2"><i class="fa-solid fa-location-dot mr-1"></i> BSD City &bull; Hunian Mewah 2 Lantai</p>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="port-item renovasi bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 group hover:shadow-xl transition-all cursor-pointer" onclick="openProjectModal('Restorasi Fasad & Interior Plaza', 'Bandung', 'Renovasi', 'Pembaruan total fasad luar menggunakan aluminium composite panel (ACP) dan curtain wall kaca hemat energi.', 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1000&q=80')">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80" alt="Renovasi Fasad" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                            <span class="text-xs bg-brandBlue-500 text-white px-3 py-1 rounded-full font-semibold">Klik Detail &rarr;</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-[10px] font-bold text-brandBlue-600 uppercase tracking-widest">Renovasi</span>
+                        <h3 class="font-heading font-bold text-xl text-navy mt-1">Restorasi Fasad & Interior Plaza</h3>
+                        <p class="text-slate-500 text-xs mt-2"><i class="fa-solid fa-location-dot mr-1"></i> Bandung &bull; Fasad Modern Curtain Wall</p>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="port-item industri bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 group hover:shadow-xl transition-all cursor-pointer" onclick="openProjectModal('Gudang & Hub Logistik', 'Cikarang', 'Industri', 'Pembangunan gudang distribusi seluas 3.500 m² menggunakan rangka baja WF span 40 meter tanpa tiang tengah.', 'https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=1000&q=80')">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=800&q=80" alt="Gudang Industri" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                            <span class="text-xs bg-brandBlue-500 text-white px-3 py-1 rounded-full font-semibold">Klik Detail &rarr;</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-[10px] font-bold text-brandBlue-600 uppercase tracking-widest">Industri</span>
+                        <h3 class="font-heading font-bold text-xl text-navy mt-1">Gudang & Hub Logistik</h3>
+                        <p class="text-slate-500 text-xs mt-2"><i class="fa-solid fa-location-dot mr-1"></i> Cikarang &bull; Rangka Baja WF 3.500 m²</p>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="port-item residensial bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 group hover:shadow-xl transition-all cursor-pointer" onclick="openProjectModal('Cluster Residence Umar Hills', 'Surabaya', 'Residensial', 'Pengembangan kawasan perumahan 45 unit rumah 2 lantai dengan gaya Scandinavian minimalis dan underground utilities.', 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80')">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Cluster Perumahan" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                            <span class="text-xs bg-brandBlue-500 text-white px-3 py-1 rounded-full font-semibold">Klik Detail &rarr;</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-[10px] font-bold text-brandBlue-600 uppercase tracking-widest">Residensial</span>
+                        <h3 class="font-heading font-bold text-xl text-navy mt-1">Cluster Residence Umar Hills</h3>
+                        <p class="text-slate-500 text-xs mt-2"><i class="fa-solid fa-location-dot mr-1"></i> Surabaya &bull; 45 Unit Rumah</p>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="port-item komersial bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 group hover:shadow-xl transition-all cursor-pointer" onclick="openProjectModal('Showroom & Boutique Hotel', 'Yogyakarta', 'Komersial', 'Pembangunan gedung komersial 5 lantai berkonsep eco-friendly yang menggabungkan area showroom dan penginapan eksklusif.', 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1000&q=80')">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80" alt="Boutique Hotel" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                            <span class="text-xs bg-brandBlue-500 text-white px-3 py-1 rounded-full font-semibold">Klik Detail &rarr;</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-[10px] font-bold text-brandBlue-600 uppercase tracking-widest">Komersial</span>
+                        <h3 class="font-heading font-bold text-xl text-navy mt-1">Showroom & Boutique Hotel</h3>
+                        <p class="text-slate-500 text-xs mt-2"><i class="fa-solid fa-location-dot mr-1"></i> Yogyakarta &bull; 5 Lantai Eco-Design</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kalkulator Section -->
+    <section id="kalkulator" class="py-20 lg:py-28 bg-slate-900 text-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="px-3.5 py-1 rounded-full bg-brandBlue-500/20 text-cyan-300 border border-brandBlue-500/40 text-xs font-bold uppercase tracking-wider">
+                        Fitur Interaktif
+                    </span>
+                    <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-white">
+                        Simulasi Kalkulator Biaya Konstruksi
+                    </h2>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Hitung estimasi awal anggaran biaya pembangunan proyek Anda dalam hitungan detik. Hasil simulasi dapat langsung dikirimkan ke tim insinyur FAIZ UMAR GROUP untuk diskusi RAB lebih lanjut.
+                    </p>
+                    
+                    <div class="p-5 rounded-2xl bg-slate-800/80 border border-slate-700/80 space-y-3">
+                        <div class="flex items-center gap-3 text-cyan-400 font-bold text-sm">
+                            <i class="fa-solid fa-circle-info text-lg"></i>
+                            <span>Catatan Estimator</span>
+                        </div>
+                        <p class="text-xs text-slate-400 leading-relaxed">
+                            Perhitungan akhir proyek akan dikalibrasi berdasarkan hasil survei lokasi tanah, gambar DED, serta penyesuaian harga material lokal.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7">
+                    <div class="bg-navy-light/90 p-8 sm:p-10 rounded-3xl border border-slate-700/80 shadow-2xl space-y-6">
+                        
+                        <!-- Step 1: Building Type -->
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-cyan-300 mb-2">1. Pilih Tipe Konstruksi</label>
+                            <select id="calc-type" class="w-full px-4 py-3.5 rounded-xl bg-slate-900 text-white border border-slate-700 focus:outline-none focus:border-brandBlue-500 font-semibold text-sm">
+                                <option value="3500000">Rumah Tinggal / Residensial (Standar)</option>
+                                <option value="5000000">Rumah Mewah / Villa (Premium)</option>
+                                <option value="4200000">Ruko / Gedung Perkantoran (Komersial)</option>
+                                <option value="3000000">Gudang / Pabrik Rangka Baja (Industri)</option>
+                                <option value="2500000">Renovasi Bangunan & Fasad</option>
+                            </select>
+                        </div>
+
+                        <!-- Step 2: Area Slider -->
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <label class="text-xs font-bold uppercase tracking-wider text-cyan-300">2. Estimasi Luas Bangunan (m²)</label>
+                                <span id="calc-area-val" class="text-lg font-extrabold text-white bg-brandBlue-600 px-3 py-1 rounded-lg">100 m²</span>
+                            </div>
+                            <input type="range" id="calc-area" min="30" max="1000" step="10" value="100" class="w-full h-2.5 bg-slate-800 rounded-lg appearance-none cursor-pointer">
+                            <div class="flex justify-between text-[10px] text-slate-400 mt-1">
+                                <span>30 m²</span>
+                                <span>500 m²</span>
+                                <span>1000 m²</span>
+                            </div>
+                        </div>
+
+                        <!-- Step 3: Material Quality Multiplier -->
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-cyan-300 mb-2">3. Kualitas Material & Finishing</label>
+                            <div class="grid grid-cols-3 gap-3">
+                                <button type="button" class="mat-btn active p-3 rounded-xl border border-brandBlue-500 bg-brandBlue-600 text-white font-bold text-xs text-center" data-mult="1.0">
+                                    Standar SNI
+                                </button>
+                                <button type="button" class="mat-btn p-3 rounded-xl border border-slate-700 bg-slate-900 text-slate-300 font-bold text-xs text-center hover:border-brandBlue-500" data-mult="1.25">
+                                    Medium Premium
+                                </button>
+                                <button type="button" class="mat-btn p-3 rounded-xl border border-slate-700 bg-slate-900 text-slate-300 font-bold text-xs text-center hover:border-brandBlue-500" data-mult="1.5">
+                                    Luxury Executive
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Calculation Output Result -->
+                        <div class="pt-4 border-t border-slate-700/80">
+                            <div class="text-xs text-slate-400 font-medium">Perkiraan Biaya Konstruksi:</div>
+                            <div id="calc-result" class="font-heading font-black text-3xl sm:text-4xl text-cyan-400 my-1">
+                                Rp 350.000.000
+                            </div>
+                            <p class="text-[11px] text-slate-400">*Belum termasuk PPN & penyesuaian khusus kondisi lahan.</p>
+                        </div>
+
+                        <button id="calc-send-wa" type="button" class="w-full py-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm transition-all shadow-lg flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span>Kirim Estimasi Ini ke WhatsApp Tim FUG</span>
+                        </button>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimoni Section -->
+    <section class="py-20 lg:py-28 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="px-3.5 py-1 rounded-full bg-brandBlue-100 text-brandBlue-600 text-xs font-bold uppercase tracking-wider">Testimoni Klien</span>
+                <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-navy mt-3">Kepuasan Pemilik Proyek & Pengembang</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200/80 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-600 text-sm italic leading-relaxed">
+                            "Proyek pembangunan gedung kantor 5 lantai kami berjalan sangat lancar. Pengawasan K3 sangat disiplin, dan penyelesaian tepat sesuai target kalender."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 mt-6 pt-6 border-t border-slate-200">
+                        <div class="w-10 h-10 rounded-full bg-navy text-white font-bold flex items-center justify-center">
+                            H
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-sm text-navy">Hendra Wijaya</h4>
+                            <p class="text-xs text-slate-500">Direktur PT Citra Megah</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200/80 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-600 text-sm italic leading-relaxed">
+                            "FAIZ UMAR GROUP memberikan transparansi RAB yang luar biasa. Tidak ada biaya membengkak di tengah jalan. Hasil finishing villa kami sangat mewah!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 mt-6 pt-6 border-t border-slate-200">
+                        <div class="w-10 h-10 rounded-full bg-navy text-white font-bold flex items-center justify-center">
+                            S
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-sm text-navy">Siti Rahmania</h4>
+                            <p class="text-xs text-slate-500">Pemilik Villa BSD</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200/80 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-600 text-sm italic leading-relaxed">
+                            "Tim arsitek dan struktur sangat komunikatif. Desain 3D yang dipresentasikan persis 100% dengan hasil akhir gudang logistik kami di Cikarang."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 mt-6 pt-6 border-t border-slate-200">
+                        <div class="w-10 h-10 rounded-full bg-navy text-white font-bold flex items-center justify-center">
+                            B
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-sm text-navy">Bambang S.</h4>
+                            <p class="text-xs text-slate-500">Head of Operations Logistik</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak Section -->
+    <section id="kontak" class="py-20 lg:py-28 bg-slate-100/70">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12">
+                
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <span class="px-3.5 py-1 rounded-full bg-brandBlue-100 text-brandBlue-600 text-xs font-bold uppercase tracking-wider">Konsultasi</span>
+                        <h2 class="font-heading font-extrabold text-3xl text-navy mt-3">Mari Diskusikan Proyek Anda</h2>
+                        <p class="text-slate-600 mt-2 text-sm">Hubungi tim ahli FAIZ UMAR GROUP untuk survei lokasi dan penawaran harga resmi.</p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-2xl bg-brandBlue-50 text-brandBlue-600 flex items-center justify-center text-xl flex-shrink-0 shadow-sm">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-navy text-base">Alamat Kantor Pusat</h4>
+                                <p class="text-slate-600 text-sm mt-1">Gedung FUG Tower Lt. 8, Jl. Jend. Sudirman No. 88, Jakarta Selatan 12190</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-2xl bg-brandBlue-50 text-brandBlue-600 flex items-center justify-center text-xl flex-shrink-0 shadow-sm">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-navy text-base">Telepon & WhatsApp</h4>
+                                <p class="text-slate-600 text-sm mt-1">+62 (21) 555-8900 / +62 812-3456-7890</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-2xl bg-brandBlue-50 text-brandBlue-600 flex items-center justify-center text-xl flex-shrink-0 shadow-sm">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-navy text-base">Email Resmi</h4>
+                                <p class="text-slate-600 text-sm mt-1">info@faizumargroup.com / proyek@faizumargroup.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="text-xs font-bold text-navy uppercase tracking-wider"><i class="fa-solid fa-map mr-1"></i> Jam Operasional</span>
+                            <span class="text-[10px] bg-emerald-100 text-emerald-800 font-bold px-2.5 py-0.5 rounded-full">Buka Sen - Sab</span>
+                        </div>
+                        <p class="text-xs text-slate-500">Senin - Jumat: 08.00 - 17.00 WIB <br> Sabtu: 08.00 - 14.00 WIB</p>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7">
+                    <div class="bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-xl">
+                        <h3 class="font-heading font-bold text-2xl text-navy mb-1">Formulir Penawaran RAB Proyek</h3>
+                        <p class="text-slate-500 text-xs mb-6">Isi formulir berikut, pesan akan terhubung langsung ke sistem WhatsApp marketing kami.</p>
+
+                        <form id="contact-form" class="space-y-4">
+                            <div class="grid sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-bold uppercase text-navy mb-1">Nama Lengkap *</label>
+                                    <input type="text" id="form-name" required placeholder="Contoh: Budi Santoso" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brandBlue-500 text-sm">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold uppercase text-navy mb-1">Nomor WhatsApp *</label>
+                                    <input type="tel" id="form-phone" required placeholder="08123456789" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brandBlue-500 text-sm">
+                                </div>
+                            </div>
+
+                            <div class="grid sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-bold uppercase text-navy mb-1">Jenis Layanan *</label>
+                                    <select id="form-service" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brandBlue-500 text-sm text-slate-700">
+                                        <option>Konstruksi Gedung / Rumah</option>
+                                        <option>Desain Arsitektur 3D & DED</option>
+                                        <option>Renovasi Bangunan & Fasad</option>
+                                        <option>Pekerjaan Rangka Baja / Gudang</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold uppercase text-navy mb-1">Lokasi Proyek</label>
+                                    <input type="text" id="form-location" placeholder="Contoh: BSD, Tangerang Selatan" class="w-full px-4 py-3 rounded-xl border border-slate-3
